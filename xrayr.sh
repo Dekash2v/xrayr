@@ -38,7 +38,7 @@ ConnectionConfig:
   BufferSize: 64
 Nodes:
   -
-    PanelType: "V2board" 
+    PanelType: "NewV2board" 
     ApiConfig:
       ApiHost: "${api_host}"
       ApiKey: "${api_key}"
@@ -76,7 +76,7 @@ Nodes:
           CLOUDFLARE_EMAIL:
           CLOUDFLARE_API_KEY:
   -
-    PanelType: "V2board" 
+    PanelType: "NewV2board" 
     ApiConfig:
       ApiHost: "${api_host}"
       ApiKey: "${api_key}"
