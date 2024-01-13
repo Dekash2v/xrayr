@@ -146,7 +146,7 @@ install_XrayR() {
     systemctl daemon-reload
     systemctl stop XrayR
     systemctl enable XrayR
-    echo -e "${green}XrayR v0.9.0${plain} Cài đặt hoàn tất!"
+    echo -e "${green}XrayR ${last_version}${plain} Cài đặt hoàn tất!"
     cp geoip.dat /etc/XrayR/
     cp geosite.dat /etc/XrayR/ 
 
