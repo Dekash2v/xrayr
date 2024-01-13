@@ -127,7 +127,7 @@ install_XrayR() {
 	    last_version="v"$1
 	fi
         url="https://github.com/XrayR-project/XrayR/releases/download/${last_version}/XrayR-linux-${arch}.zip"
-        echo -e "Bắt đầu cài đặt XrayR v0.9.0"
+        echo -e "Bắt đầu cài đặt XrayR ${last_version}"
         wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip ${url}
         if [[ $? -ne 0 ]]; then
             echo -e "${red}Phiên bản XrayR ${last_version} Lỗi, không xác định được phiên bản${plain}"
@@ -140,7 +140,7 @@ install_XrayR() {
     chmod +x XrayR
     mkdir /etc/XrayR/ -p
     rm /etc/systemd/system/XrayR.service -f
-    file="https://raw.githubusercontent.com/overkillzero/xrayr/main/XrayR.service"
+    file="https://github.com/XrayR-project/XrayR-release/raw/master/XrayR.service"
     wget -q -N --no-check-certificate -O /etc/systemd/system/XrayR.service ${file}
     #cp -f XrayR.service /etc/systemd/system/
     systemctl daemon-reload
