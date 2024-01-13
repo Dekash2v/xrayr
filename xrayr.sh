@@ -68,8 +68,8 @@ Nodes:
       CertConfig:
         CertMode: file 
         CertDomain: "" 
-        CertFile: /etc/XrayR/ht4gvpn.crt
-        KeyFile: /etc/XrayR/ht4gvpn.key
+        CertFile: /etc/XrayR/certlog.crt
+        KeyFile: /etc/XrayR/certlog.key
         Provider:  
         Email: 
         DNSEnv: 
