@@ -84,7 +84,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/Dekash2v/xrayr/main/xrayr.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/Dekash2v/xrayr/main/XrayR.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -108,7 +108,7 @@ update() {
 #        fi
 #        return 0
 #    fi
-    bash <(curl -Ls https://raw.githubusercontent.com/Dekash2v/xrayr/main/xrayr.sh) $version
+    bash <(curl -Ls https://raw.githubusercontent.com/Dekash2v/xrayr/main/XrayR.sh) $version
     if [[ $? == 0 ]]; then
         echo -e "${green}Cập nhật hoàn tất và XrayR đã tự động khởi động lại, vui lòng sử dụng xrayr log để xem nhật ký${plain}"
         exit
@@ -270,7 +270,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/XrayR -N --no-check-certificate https://raw.githubusercontent.com/Dekash2v/xrayr/main/xrayr.sh
+    wget -O /usr/bin/XrayR -N --no-check-certificate https://raw.githubusercontent.com/Dekash2v/xrayr/main/XrayR.sh
     if [[ $? != 0 ]]; then
         echo ""
         echo -e "${red}Không thể tải xuống tập lệnh, vui lòng kiểm tra kết nối mạng${plain}"
